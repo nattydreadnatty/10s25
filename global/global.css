@@ -14,6 +14,7 @@ body {
 }
 
 /* ==== Couleurs ==== */
+.font-white, a.font-white:visited { color: #ffffff; }
 .font-yellow, a.font-yellow:visited { color: #f9e25b; }
 a.font-yellow:hover { color: #489fff; }
 .font-green { color: #63ff43; }
