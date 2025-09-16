@@ -3,6 +3,7 @@
 }
 .doleances .grid-item {
 	padding: 40px 20px 20px 20px;
+	overflow-inline: auto;
 }
 .postit { margin: 10px; transform: none;}
 .default-pointer {cursor: default !important;}
