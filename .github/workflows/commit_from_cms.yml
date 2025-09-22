@@ -1,7 +1,7 @@
 #
 #	Import de la liste des groupes du CMS dans les sites statiques
 #
-name: Commit Groupes
+name: Commit from CMS
 run-name: ${{ github.actor }} update from CMS
 
 on:
