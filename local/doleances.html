@@ -35,34 +35,14 @@
 <!-- End Matomo Code --><link rel='stylesheet' href='http://10s25.local/cms/prive/spip_admin.css' type='text/css'>
 <body>
 	<header id="banniere">
-		<a href="/" title="Accueil"><img id="logo_left" src="/global/img/logo-inbt.svg"></a>
-		<div>
-			<h1 class="font-yellow">Cahiers de doléances</h1>
-		</div>
+		<a href="/" title="Accueil"><img id="logo_left" src="/global/img/logo-inbt.svg" alt="<!--#echo var="SERVER_NAME" -->"></a>
+		<div><h1 class="font-yellow">Cahier de doléances</h1></div>
 	</header>
 	<div id="menu_top">
 		<ul>
 			<li><a href="/">⌂</a></li>
-			<li class="dropdown">
-	<a href="#" class="disabled">Ressources ▾</a>
-	
-	<ul class="submenu">
-		
-		<li><a href="/cms/spip.php?page=article&amp;id_article=3">Visuels</a></li>
-		
-		<li><a href="/cms/spip.php?page=article&amp;id_article=4">Vidéos</a></li>
-		
-	</ul>
-	
-</li>
-
-<li class="dropdown">
-	<a href="#" class="disabled">Doléances ▾</a>
-	<ul class="submenu">
-		<li><a href="/local/formulaire-doleances.html">Formulaire de Doléances</a></li>
-		<li><a href="/cms/?page=doleances">Cahier de Doléances</a></li>
-	</ul>
-</li>			<li><a href="/global/sites.html">Sites</a></li>
+			<!--#include virtual="/cms/?page=inc_menu" onerror="/local/ssi/menu_top.shtml" -->
+			<li><a href="/global/sites.html">Sites</a></li>
 		</ul>
 	</div>
 	<main id="center">
@@ -94,6 +74,7 @@ Et à nous les faire parvenir à l’adresse suivante&nbsp;: à venir</p>
 				<div class="doleances">
 					
 					<h2 align="center">Dernières doléances publiées</h2>
+					<br>
 					<div class="grid">
 					
 					<div class="postit grid-item background-yellow font-black default-pointer"><p>Que les 50 milliards de déficit soient comblés par l&#8217;annulation des aides publiques aux entreprises qui versent des dividendes&nbsp;!!</p></div>
@@ -169,7 +150,7 @@ Et à nous les faire parvenir à l’adresse suivante&nbsp;: à venir</p>
 	<!--extra-->
 	<a href="ecrire/" class="spip-admin-boutons"
 		id="ecrire">Espace privé</a>
-	<a href="./?page=last_doleances&amp;var_mode=recalcul" class="spip-admin-boutons"
+	<a href="./?page=last_doleances&amp;var_mode=calcul" class="spip-admin-boutons"
 		id="var_mode">Recalculer cette page</a>
 </div>
 </body>
