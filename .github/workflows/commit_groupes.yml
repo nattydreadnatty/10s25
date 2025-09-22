@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  update_calcs:
+  update_from_cms:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,6 +28,9 @@ jobs:
           cd global/ssi
           wget -O "groupes.shtml" https://10s25.ovh/cms/?page=groupes
           cd ../..
+          cd local
+          wget -O "doleances.html" https://10s25.ovh/cms/?page=last_doleances
+          cd ..
 
       - name: Commit changes
         run: |
