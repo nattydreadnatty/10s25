@@ -24,7 +24,7 @@ jobs:
             global/ssi
             local
 
-      - name: Copy groups list (html format, ready to publish)
+      - name: Copy (html format, ready to publish)
         run: |
           cd global/ssi
           wget -O "groupes.shtml" https://10s25.ovh/cms/?page=groupes
