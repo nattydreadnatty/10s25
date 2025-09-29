@@ -26,6 +26,63 @@ ul.liste_groupes > li > p {
 	font-size: 120%;
 }
 
+div.accordion_all {
+	float: right;
+}
+div.accordion_all::before {
+	cursor: pointer;
+}
+
+ul.css-accordion > li {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul.css-accordion > li > input, input.accordion_all {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+ul.css-accordion > li > label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul.css-accordion > li > div.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s;
+}
+
+ul.css-accordion > li > input:checked ~ div.content {
+  max-height: none;
+  max-height: unset;
+  padding: 0.5em 1em;
+}
+
+ul.css-accordion > li > label::before {
+  display: inline-block;
+  margin-right: 1em;
+  text-align: center;
+  transition: all .35s;
+}
+
+ul.css-accordion > li > input[type=checkbox] + label::before, div.accordion_all:before {
+  content: "\25BC";
+  color: #df8f00;
+  transform: rotate(-90deg);
+	float: left;
+}
+
+ul.css-accordion > li > input[type=checkbox]:checked + label::before, input[type=checkbox]:checked + div.accordion_all::before {
+  transform: rotate(0deg);
+}
+
 
 /* ==== Avertissement ==== */
 .danger-banner { font-size: clamp(4rem, 8vw + 2rem, 7rem); display: flex; align-items: center; justify-content: center;
