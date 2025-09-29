@@ -38,8 +38,11 @@ ul.css-accordion > li {
   margin-bottom: 1px;
   width: 100%;
   overflow: hidden;
+  border-radius: 5px;
 }
-
+ul.css-accordion > li:hover {
+	background: #000;
+}
 ul.css-accordion > li > input, input.accordion_all {
   position: absolute;
   opacity: 0;
@@ -76,8 +79,8 @@ ul.css-accordion > li > input[type=checkbox] + label::before, div.accordion_all:
   content: "\25BC";
   color: #00af00;
   text-shadow: #af00af 0 0 5px;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #ffff00;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: #000;
   transform: rotate(-90deg);
 	float: left;
 }
