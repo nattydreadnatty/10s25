@@ -26,6 +26,12 @@ ul.liste_groupes > li > p {
 	font-size: 120%;
 }
 
+ul.liste_groupes li label a {
+	text-decoration: none;
+	color: #f9e25b!important;
+	font-weight: 600;
+}
+
 div.accordion_all {
 	float: right;
 }
@@ -38,10 +44,13 @@ ul.css-accordion > li {
   margin-bottom: 1px;
   width: 100%;
   overflow: hidden;
-  border-radius: 5px;
+	border: thin solid #222222;
+  border-radius: 10px;
 }
 ul.css-accordion > li:hover {
-	background: #000;
+	background: #181818;
+	border: thin solid #383838;
+	box-shadow: 1px 1px 10px #282828;
 }
 ul.css-accordion > li > input, input.accordion_all {
   position: absolute;
