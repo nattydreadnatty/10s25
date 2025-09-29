@@ -74,7 +74,10 @@ ul.css-accordion > li > label::before {
 
 ul.css-accordion > li > input[type=checkbox] + label::before, div.accordion_all:before {
   content: "\25BC";
-  color: #df8f00;
+  color: #00af00;
+  text-shadow: #af00af 0 0 5px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #ffff00;
   transform: rotate(-90deg);
 	float: left;
 }
