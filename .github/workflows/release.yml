@@ -19,9 +19,8 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Clean
-        run: |
-          rm -rf .github
+      - name: Create release archive (exclude .github)
+        run: zip -r release.zip . -x ".github/*" -x ".git/*"
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -30,3 +29,4 @@ jobs:
           name: Dernière version
           draft: false
           prerelease: false
+          files: release.zip

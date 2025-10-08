@@ -8,10 +8,10 @@
 	overflow: hidden;
 }
 
-ul.liste_groupes > li > ul > li{
-	padding-left: 50px;
-	margin-bottom: 15px;
+ul.liste_groupes > li > ul > li {
+	padding-left: 30px;
 }
+
 ul.liste_groupes > ul {
 	padding-left: 30px;
 }
@@ -24,6 +24,81 @@ ul.liste_groupes li p {
 ul.liste_groupes > li > p {
 	font-weight: 600;
 	font-size: 120%;
+}
+
+ul.liste_groupes li label a {
+	text-decoration: none;
+	color: #f9e25b!important;
+	font-weight: 600;
+}
+ul.liste_groupes li label a:hover {
+	color: #ff9f00!important;
+}
+
+div.accordion_all {
+	float: right;
+}
+div.accordion_all::before {
+	cursor: pointer;
+}
+
+ul.css-accordion > li {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+	border: thin solid #222222;
+  border-radius: 10px;
+}
+ul.css-accordion > li > ul > li:hover {
+	background: #181818;
+	border: thin solid #383838;
+	box-shadow: 1px 1px 10px #282828;
+}
+ul.css-accordion > li > input, input.accordion_all {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+ul.css-accordion > li > label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul.css-accordion > li > div.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s;
+}
+
+ul.css-accordion > li > input:checked ~ div.content {
+  max-height: none;
+  max-height: unset;
+  padding: 0.5em 1em;
+}
+
+ul.css-accordion > li > label::before {
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  transition: all .35s;
+}
+
+ul.css-accordion > li > input[type=checkbox] + label::before, div.accordion_all:before {
+  content: "\25BC";
+  color: #00af00;
+  text-shadow: #af00af 0 0 5px;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: #000;
+  transform: rotate(-90deg);
+	float: left;
+}
+
+ul.css-accordion > li > input[type=checkbox]:checked + label::before, input[type=checkbox]:checked + div.accordion_all::before {
+  transform: rotate(0deg);
 }
 
 

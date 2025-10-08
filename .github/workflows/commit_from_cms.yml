@@ -1,7 +1,7 @@
 #
 #	Import de la liste des groupes du CMS dans les sites statiques
 #
-name: Commit Groupes
+name: Commit from CMS
 run-name: ${{ github.actor }} update from CMS
 
 on:
@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  update_calcs:
+  update_from_cms:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,12 +22,16 @@ jobs:
         with:
           sparse-checkout: |
             global/ssi
+            local
 
-      - name: Copy groups list (html format, ready to publish)
+      - name: Copy (html format, ready to publish)
         run: |
           cd global/ssi
           wget -O "groupes.shtml" https://10s25.ovh/cms/?page=groupes
           cd ../..
+          cd local
+          wget -O "doleances.html" https://10s25.ovh/cms/?page=last_doleances
+          cd ..
 
       - name: Commit changes
         run: |
