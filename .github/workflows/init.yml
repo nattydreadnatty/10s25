@@ -12,7 +12,6 @@ jobs:
       fail-fast: false
       matrix:
         site:
-          - { name: "indignonsnous.fr", prefix: "_INDIGNONSNOUS_FR" }
           - { name: "10s25.fr", prefix: "_10S25_FR" }
           - { name: "bloquonstout.ovh", prefix: "_BLOQUONSTOUT_OVH" }
           - { name: "indignonsnous.ovh", prefix: "_INDIGNONSNOUS_OVH" }
