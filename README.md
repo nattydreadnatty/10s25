@@ -1,4 +1,5 @@
-<img src="https://indignonsnous.fr/global/img/logo-inbt.svg" alt="Logo Indignons-nous" width="200">
+<img width="1280" height="640" alt="logo_1280x640" src="https://github.com/user-attachments/assets/0e718c87-78ec-448b-bfb2-76d79b18a3a2" />
+
 
 **Sites Indignons-nous pour le 10 septembre 2025 et après.**
 
