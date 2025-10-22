@@ -79,6 +79,10 @@
 }
 
 /* ===== Visuels ===== */
+.visuels {
+    margin-top: 50px;
+}
+
 .grid {
     column-count: 5;
     column-gap: 20px;
@@ -110,3 +114,42 @@
     margin: 0;
     transition: all 0.3s ease;
 }
+
+.spip_doc_legende .spip_doc_titre,
+.spip_doc_legende .spip_doc_credits {
+    display: none; /* masque ceux du modèle */
+}
+
+.titre-video {
+    font-weight: bold;
+    margin-top: 0.4em;
+    font-size: clamp(0.9rem, 1.5vw, 0.9rem)!important;
+}
+
+.star-rating-control {
+    font-size: clamp(0.9rem, 1.5vw, 1rem)!important;
+}
+
+/* Tablettes */
+@media (max-width: 1200px) {
+    .grid {
+        column-count: 4;
+        padding : 10px;
+    }
+}
+
+/* Petits écrans */
+@media (max-width: 900px) {
+    .grid {
+        column-count: 3;
+
+    }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+    .grid {
+        column-count: 1;
+    }
+}
+
