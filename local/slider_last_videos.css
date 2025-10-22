@@ -112,3 +112,7 @@
     max-width: 100% !important;
     width: 100% !important;
 }
+
+.slider-videos .spip_doc_legende {
+    display: none !important;
+}
