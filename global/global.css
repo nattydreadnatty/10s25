@@ -248,6 +248,19 @@ section.postit ul li.revendication {
 	#content .danger-banner span.emoji { font-size: 3rem; }
 	#content .danger-banner span.text { font-size: 1rem; }
 	#sidebar { min-width: 0; padding: 15px; }
+	/* Sur petits écrans, on empile le contenu verticalement */
+
+		#banniere {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 0 20px;
+		}
+
+		#countdown-wrapper {
+			margin-top: 1rem;
+		}
+
 }
 /* ==== Impression ==== */
 @media only print {
