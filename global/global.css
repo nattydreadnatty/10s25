@@ -101,8 +101,7 @@ main#center {
 }
 
 /* ==== Sidebar ==== */
-#sidebar { background: #222; padding: 1rem; width: 30%; margin-top: 30px; min-width: 300px; }
-#sidebar { padding: clamp(0.5rem, 1vw, 1rem); }
+#sidebar { background: #222; padding: clamp(0.5rem, 1vw, 1rem); width: 30%; margin-top: 50px; min-width: 300px; }
 
 #sidebar a { color: #fff; }
 #sidebar a:hover { color: #f2e25b; }
@@ -118,9 +117,13 @@ main#center {
 	display: flex;
 	padding: clamp(3px, 0.8vw, 5px) clamp(8px, 1.5vw, 10px); 
 	font-size: clamp(1.2rem, 2.5vw, 1.5em);
+	cursor: pointer;
 }
 
-#rejoindre { margin-top: 50px; }
+#rejoindre:hover {
+	background-color: #ffffff;
+	color: #f52639;
+}
 #rejoindre::before {
 	content: "\002B07";
 	margin-right: 15px;
@@ -130,6 +133,41 @@ main#center {
 	content: "\002B07";
 	margin-left: 15px;
 }
+
+/* ==== Accordéon REJOINS-NOUS ==== */
+.accordion-section {
+	margin-bottom: 50px;
+}
+
+/* Contenu masqué par défaut */
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: max-height 0.5s ease-out, opacity 0.4s ease;
+	background: #1c1c1c;
+	padding: 0 1em;
+}
+
+/* ✅ Quand le toggle est coché → le contenu se déplie */
+#rejoins-toggle:checked ~ .accordion-content {
+	max-height: 4000px;
+	opacity: 1;
+	padding: 1em;
+	transition: max-height 0.6s ease-in, opacity 0.5s ease-in;
+}
+
+/* Flèches animées */
+#rejoindre::before, #rejoindre::after {
+	transition: transform 0.3s ease;
+}
+#rejoins-toggle:checked + #rejoindre::before,
+#rejoins-toggle:checked + #rejoindre::after {
+	transform: rotate(180deg);
+}
+
+
+
 #sidebar ul.sidebar-section-1 > li > ul > li { margin: 15px 0 30px 0; }
 #sidebar ul.sidebar-section-2 > li > ul > li { margin: 15px 0 15px 0; }
 #sidebar ul.sidebar-section-2 a { font-weight: 600; }
