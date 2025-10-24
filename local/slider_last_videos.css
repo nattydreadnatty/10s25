@@ -11,7 +11,7 @@
     transition: transform 0.5s ease;
 }
 
-.slide {
+.slider-videos .slide {
     flex: 0 0 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 
 /* === Titres === */
-.titre-video {
+.slider-videos .titre-video {
     color: #fff;
     font-size: 1rem;
     margin-top: 8px;
@@ -56,7 +56,7 @@
 }
 
 /* === Correction affichage des vignettes === */
-.video-container {
+.slider-videos .video-container {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -64,7 +64,7 @@
 }
 
 /* Le conteneur SPIP de la vignette oEmbed */
-.rwd-video-container {
+.slider-videos .rwd-video-container {
     position: relative;
     width: 100%;
     height: 0 !important;             /* on neutralise le conflit */
@@ -76,7 +76,7 @@
 }
 
 /* L’iframe YouTube à l’intérieur */
-.rwd-video-container iframe {
+.slider-videos .rwd-video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@
 
 
 /* Bouton lecture centré (SPIP) */
-.rwd-video-container button {
+.slider-videos .rwd-video-container button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,13 +102,13 @@
     cursor: pointer;
 }
 
-.rwd-video-container button::after {
+.slider-videos .rwd-video-container button::after {
     content: '▶';
     font-size: 26px;
 }
 
 /* --- Sécurité : on annule les max-width injectés par SPIP --- */
-.oembed.oe-video {
+.slider-videos .oembed.oe-video {
     max-width: 100% !important;
     width: 100% !important;
 }

@@ -109,7 +109,7 @@ main#center {
 #sidebar li { list-style: none; }
 
 /* ==== Bouton rejoindre ==== */
-#rejoindre, #visuels-récents {
+#rejoindre, #visuels-recents, #visuel-a-la-une {
 	width: 100%; align-items: center;
 	justify-content: center;
 	font-weight: 800;

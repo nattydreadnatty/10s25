@@ -1,0 +1,20 @@
+
+.video_a_la_une {
+    padding: 10px;
+}
+
+.video_a_la_une .spip_doc_legende  {
+    display: none;
+}
+
+.video_a_la_une .video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video_a_la_une .oembed.oe-video {
+    max-width: 100% !important;
+    width: 100% !important;
+}
