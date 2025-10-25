@@ -14,7 +14,56 @@
     border-radius: 10px;
 }
 
+/* Le conteneur SPIP de la vignette oEmbed */
+.video_a_la_une .rwd-video-container {
+    position: relative;
+    width: 100%;
+    height: 0 !important;             /* on neutralise le conflit */
+    padding-bottom: 56.25% !important; /* ratio 16:9 */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+}
+
+/* L’iframe YouTube à l’intérieur */
+.video_a_la_une .rwd-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+/* Bouton lecture centré (SPIP) */
+.video_a_la_une .rwd-video-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.video_a_la_une .rwd-video-container button::after {
+    content: '▶';
+    font-size: 26px;
+}
+
+/* --- Sécurité : on annule les max-width injectés par SPIP --- */
 .video_a_la_une .oembed.oe-video {
     max-width: 100% !important;
     width: 100% !important;
+}
+
+.video_a_la_une .spip_doc_legende {
+    display: none !important;
 }
