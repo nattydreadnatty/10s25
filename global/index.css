@@ -35,70 +35,74 @@ ul.liste_groupes li label a:hover {
 	color: #ff9f00!important;
 }
 
-div.accordion_all {
-	float: right;
-}
-div.accordion_all::before {
-	cursor: pointer;
+ul.css-accordion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul.css-accordion > li {
-  position: relative;
-  margin-bottom: 1px;
-  width: 100%;
-  overflow: hidden;
-	border: thin solid #222222;
-  border-radius: 10px;
-}
-ul.css-accordion > li > ul > li:hover {
-	background: #181818;
-	border: thin solid #383838;
-	box-shadow: 1px 1px 10px #282828;
-}
-ul.css-accordion > li > input, input.accordion_all {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+    border: thin solid #222;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    background: #111;
 }
 
-ul.css-accordion > li > label {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
+ul.css-accordion input {
+    display: none;
 }
 
-ul.css-accordion > li > div.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .35s;
+ul.css-accordion label {
+    display: block;
+    cursor: pointer;
+    padding: 0.6em 1em;
+    color: #ffcc00;
+    font-weight: 600;
+    background: #1a1a1a;
+    transition: background 0.3s;
 }
 
-ul.css-accordion > li > input:checked ~ div.content {
-  max-height: none;
-  max-height: unset;
-  padding: 0.5em 1em;
+ul.css-accordion label:hover {
+    background: #252525;
 }
 
-ul.css-accordion > li > label::before {
-  display: inline-block;
-  margin-right: 5px;
-  text-align: center;
-  transition: all .35s;
+ul.css-accordion label::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+    color: #00af00;
 }
 
-ul.css-accordion > li > input[type=checkbox] + label::before, div.accordion_all:before {
-  content: "\25BC";
-  color: #00af00;
-  text-shadow: #af00af 0 0 5px;
-  -webkit-text-stroke: thin;
-  -webkit-text-stroke-color: #000;
-  transform: rotate(-90deg);
-	float: left;
+ul.css-accordion input:checked + label::before {
+    transform: rotate(90deg);
 }
 
-ul.css-accordion > li > input[type=checkbox]:checked + label::before, input[type=checkbox]:checked + div.accordion_all::before {
-  transform: rotate(0deg);
+ul.css-accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #0c0c0c;
+    padding-left: 1.2rem;
+}
+
+ul.css-accordion input:checked ~ .content {
+    max-height: 2000px;
+    padding: 0.5em 1em;
+}
+
+ul.css-accordion a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+ul.css-accordion a:hover {
+    color: #ffcc00;
+}
+
+.accordion_all {
+    display: none !important;
 }
 
 
