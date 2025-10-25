@@ -1,4 +1,4 @@
-.apercu-article-a-la-une {
+.article_a_la_une .article-item {
     margin-top: 20px;
     overflow: hidden;
     background-color: #F2E25B;
@@ -7,7 +7,7 @@
 }
 
 /* Le lien cliquable (en-tête) */
-.apercu-article-a-la-une a.bloc-article {
+.article_a_la_une .article-item a.bloc-article {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,47 +16,47 @@
     margin-bottom: 10px;
 }
 
-.apercu-article-a-la-une img {
+.article_a_la_une .article-item img {
     margin-right: 15px;
     max-width: 150px;
     height: auto;
 }
 
-.apercu-article-a-la-une .contenu-article strong {
+.article_a_la_une .article-item .contenu-article strong {
     font-size: 1.1rem;
     display: block;
 }
 
-.apercu-article-a-la-une .contenu-article .small {
+.article_a_la_une .article-item .contenu-article .small {
     font-size: 0.85rem;
     font-style: italic;
 }
 
-.apercu-article-a-la-une .note {
+.article_a_la_une .article-item .note {
     margin-top: 5px;
     font-weight: bold;
 }
 
 /* Le texte complet SPIP (dans le même fond jaune) */
-.apercu-article-a-la-une .texte-complet {
+.article_a_la_une .article-item .texte-complet {
     margin-top: 10px;
     line-height: 1.6;
     font-size: 1rem;
     text-align: justify;
 }
 
-.apercu-article-a-la-une .texte-complet a {
+.article_a_la_une .article-item .texte-complet a {
     color: #b40000;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.apercu-article-a-la-une .texte-complet a:hover {
+.article_a_la_une .article-item .texte-complet a:hover {
     text-decoration: none;
 }
 
-.apercu-article-a-la-une .texte-complet img,
-.apercu-article-a-la-une .texte-complet figure {
+.article_a_la_une .article-item .texte-complet img,
+.article_a_la_une .article-item .texte-complet figure {
     max-width: 100%;
     height: auto;
     display: block;
