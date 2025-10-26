@@ -272,6 +272,10 @@ section.postit ul li.revendication {
 #footer section.postit div {
 	transform: rotate(1deg) translateX(20px) translateY(20px);
 }
+
+.mailto {
+	color: #000000!important;
+}
 /* ==== Petits écrans ==== */
 @media only screen and (max-width: 1024px) {
 	main#center { flex-direction: column; align-items: center; text-align: left; }
