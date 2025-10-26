@@ -108,7 +108,7 @@ main#center {
 #sidebar li { list-style: none; }
 
 /* ==== Bouton rejoindre ==== */
-#rejoindre, #visuels-recents, #visuel-a-la-une {
+#rejoindre, #visuels-recents, #visuel-a-la-une, #compteurs {
 	width: 100%; align-items: center;
 	justify-content: center;
 	font-weight: 800;
