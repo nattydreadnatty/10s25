@@ -1,0 +1,78 @@
+/* === Accordéons CSS sans JS (uniformisés) === */
+.page_rubrique .accordion {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page_rubrique .accordion details {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #111;
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.page_rubrique .accordion summary {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.page_rubrique .accordion summary:hover {
+    background: #222;
+}
+
+.page_rubrique .accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.page_rubrique .accordion summary::after {
+    content: "▶";
+    transition: transform 0.3s;
+}
+
+.page_rubrique details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+.page_rubrique .accordion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1.5rem 1rem;
+    background: #1a1a1a;
+}
+
+.page_rubrique .accordion ul li {
+    margin: 0.2rem 0;cursor: pointer;
+
+}
+.page_rubrique .accordion ul li:hover {
+    background: #222;
+}
+
+.page_rubrique .accordion ul li a {
+    display: block;
+    color: #ffffff!important;
+    text-decoration: none;
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.page_rubrique .accordion ul li a:hover {
+    color: #f2e25b!important;
+    text-shadow: unset;
+}
+
+.page_rubrique .notation_valeur {
+    display: none !important;
+}
