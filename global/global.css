@@ -108,7 +108,7 @@ main#center {
 #sidebar li { list-style: none; }
 
 /* ==== Bouton rejoindre ==== */
-#rejoindre, #visuels-recents, #visuel-a-la-une {
+#rejoindre, #visuels-recents, #visuel-a-la-une, #compteurs, #revendications, #liste-revendications {
 	width: 100%; align-items: center;
 	justify-content: center;
 	font-weight: 800;
@@ -253,6 +253,11 @@ section.postit ul li.revendication {
 	width: 100%;
 	margin: 50px;
 }
+
+#footer a {
+	color: #f2e25b;
+}
+
 #footer section.postit {
 	max-width: 95%;
 	transform: rotate(-1deg) translateX(-20px) translateY(-20px);
@@ -266,6 +271,10 @@ section.postit ul li.revendication {
 }
 #footer section.postit div {
 	transform: rotate(1deg) translateX(20px) translateY(20px);
+}
+
+.mailto {
+	color: #000000!important;
 }
 /* ==== Petits écrans ==== */
 @media only screen and (max-width: 1024px) {
