@@ -1,0 +1,65 @@
+header#banniere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-greve {
+    text-align: center;
+    color: white;
+    background: #000;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-greve #menu_top {
+    margin: 2rem;
+}
+
+.compteur-greve {
+    box-shadow:
+            0 0 10px rgba(242, 226, 91, 0.2),
+            0 0 25px rgba(242, 226, 91, 0.15),
+            inset 0 0 10px rgba(242, 226, 91, 0.05);
+    max-width: 600px;
+    padding: 50px;
+}
+
+.page-greve .compteur-greve h1 {
+    margin-bottom: 3rem;
+}
+
+.nombre-grevistes {
+    font-size: 5rem;
+    color: #f2e25b;
+    text-shadow: 0 0 20px rgba(190,170,50,0.4);
+    margin: 2rem 0;
+}
+
+.form-greve button {
+    background: #f2e25b;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 2rem 2rem;
+}
+.form-greve button:hover {
+    transform: scale(1.05);
+}
+
+.page-greve footer {
+    margin: 2rem 0;
+}
+
+.page-greve a {
+    color: #f2e25b;
+}

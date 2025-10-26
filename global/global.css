@@ -253,6 +253,11 @@ section.postit ul li.revendication {
 	width: 100%;
 	margin: 50px;
 }
+
+#footer a {
+	color: #f2e25b;
+}
+
 #footer section.postit {
 	max-width: 95%;
 	transform: rotate(-1deg) translateX(-20px) translateY(-20px);
