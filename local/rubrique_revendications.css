@@ -13,7 +13,7 @@
     overflow: hidden;
 }
 
-.page_rubrique .accordion summary {
+.page_rubrique .accordion summary.first {
     cursor: pointer;
     padding: 1rem;
     font-size: 1.1rem;
@@ -30,17 +30,48 @@
     background: #222;
 }
 
-.page_rubrique .accordion summary::-webkit-details-marker {
+.page_rubrique .accordion summary.second {
+    list-style: none;
+}
+
+.page_rubrique .accordion summary.second::after {
     display: none;
 }
 
-.page_rubrique .accordion summary::after {
+.page_rubrique .accordion summary.second a {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+
+.page_rubrique .accordion summary::-webkit-details-marker, .page_rubrique .accordion summary.second::-webkit-details-marker{
+    display: none!important;
+}
+
+.page_rubrique .accordion summary::after, .page_rubrique .accordion summary.second a::after {
     content: "▶";
     transition: transform 0.3s;
 }
 
-.page_rubrique details[open] summary::after {
+.page_rubrique details[open] summary.first::after {
     transform: rotate(90deg);
+}
+
+.page_rubrique .accordion summary a {
+    color: #ffffff!important;
+}
+
+.page_rubrique .accordion summary a:hover {
+    color: #f2e25b!important;
+    text-shadow: unset!important;
 }
 
 .page_rubrique .accordion ul {
